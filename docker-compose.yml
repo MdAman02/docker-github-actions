@@ -6,6 +6,6 @@ services:
     ports:
       - "81:80"
   web:
-    build: .
+    image: webapp:latest
     ports:
       - "3000:3000"
