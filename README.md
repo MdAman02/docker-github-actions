@@ -14,3 +14,6 @@ https://hub.docker.com/repository/docker/mdamanu/aman/tags/latest/sha256:25de279
 | `scripts/containers.sh` | Cleans up existing containers and redeploys via compose |
 | `scripts/startup.sh` | Entry point script run at container/service startup |
 | `.github/workflows/docker-image.yml` | GitHub Actions CI to build and push the Docker image |
+
+
+## startup scripts are copied to home directory and set in systemd service
