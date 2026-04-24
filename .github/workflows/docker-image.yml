@@ -21,6 +21,7 @@ jobs:
   deploy:
     
     runs-on: self-hosted
+    needs: build
 
     steps:
     - name: Deploy and restart the containers
