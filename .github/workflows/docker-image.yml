@@ -18,3 +18,5 @@ jobs:
       run: sudo docker build . --tag mdamanu/aman
     - name: Push the docker image
       run: sudo docker push mdamanu/aman
+    - name: Run the docker image
+      run: sudo ~/containers.sh
