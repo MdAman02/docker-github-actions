@@ -1,13 +1,4 @@
-# Docker GitHub Actions
+# My Web App
+This is hosted by a node server from this docker image:
 
-This project demonstrates how to use Docker with GitHub Actions for CI/CD pipelines.
-
-## Features
-- Automated builds with GitHub Actions
-- Docker containerization
-- Node.js server
-
-## Getting Started
-1. Clone the repository
-2. Run `npm install`
-3. Start the server with `node server.js`
+https://hub.docker.com/repository/docker/mdamanu/aman/tags/latest/sha256:25de2793249cacd806c26f4d216eccfb245fd4c0bba9c048cdb690369c0de65a
