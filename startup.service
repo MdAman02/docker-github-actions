@@ -1,0 +1,11 @@
+[Unit]
+Description=My Startup Script
+After=network.target
+
+[Service]
+ExecStart=/home/ubuntu/startup.sh
+Restart=on-failure
+User=ubuntu
+
+[Install]
+WantedBy=multi-user.target
