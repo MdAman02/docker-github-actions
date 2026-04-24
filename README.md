@@ -9,12 +9,13 @@ https://hub.docker.com/repository/docker/mdamanu/aman/tags/latest/sha256:25de279
 |------|-------------|
 | `server.js` | Node.js HTTP server that reads and serves README.md |
 | `Dockerfile` | Builds the Docker image for the Node server |
-| `docker-compose.yml` | Defines and runs the container stack |
-| `startup.service` | Systemd service to auto-start the server on boot |
-| `scripts/containers.sh` | Cleans up existing containers and redeploys via compose |
-| `scripts/startup.sh` | Entry point script run at container/service startup |
-| `.github/workflows/docker-image.yml` | GitHub Actions CI to build and push the Docker image |
+| `docker-compose.yml` | Defines and runs the node server and a nginx server |
+| `startup.service` | Systemd service to scaffold env with docker login and auto-start the server containers on boot |
+| `github-runner.service` | Systemd service to run the self-hosted GitHub Actions runner on boot |
+| `scripts/containers.sh` | Cleans up existing containers and redeploys the docker compose |
+| `scripts/startup.sh` | scripts that run for startup systemd service |
+| `.github/workflows/docker-image.yml` | GitHub Actions CI to build, push the Docker images and deploy containers |
 
-
-## startup scripts are copied to home directory and set in systemd service
-## Test Runner again
+## Every push build and deploys latest image to the private reposotory
+## startup script are copied to home directory and used in systemd service
+## deploy job on github workflow runs the `containers.sh`
