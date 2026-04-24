@@ -1,0 +1,11 @@
+[Unit]
+Description=Github Runner Script
+After=network.target
+
+[Service]
+ExecStart=/home/ubuntu/actions-runner/run.sh
+Restart=on-failure
+User=ubuntu
+
+[Install]
+WantedBy=multi-user.target
