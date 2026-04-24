@@ -19,3 +19,13 @@ https://hub.docker.com/repository/docker/mdamanu/aman/tags/latest/sha256:25de279
 ## Every push build and deploys latest image to the private reposotory
 ## startup script are copied to home directory and used in systemd service
 ## deploy job on github workflow runs the `containers.sh`
+
+# Deployed Servers:
+Node Server: [Node](63.182.108.159:3000)
+Nginx: [Nginx](http://63.182.108.159:81/)
+
+# EC2 Instance Detail
+- Instance ID: i-0f96d5bd90d54cb7e
+- Instance Name: docker-github-assignment
+- Instance IP: 63.182.108.159
+- Instance Type: ubuntu
