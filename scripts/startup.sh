@@ -1,13 +1,6 @@
 #!/bin/bash
-ls
-echo "Booting up the server and GitHub Actions runner..."
-
-cd ~/actions-runner
-ls
-echo "Setting up GitHub Actions runner..."
-./run.sh &
+echo "Booting up the server..."
 
 echo "Running containers..."
 cd ~/docker-github-actions/scripts
-ls
-sudo ./containers.sh &
+./containers.sh
