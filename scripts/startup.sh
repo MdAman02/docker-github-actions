@@ -10,4 +10,4 @@ echo "Setting up GitHub Actions runner..."
 echo "Running containers..."
 cd ~/docker-github-actions/scripts
 ls
-./containers.sh &
+sudo ./containers.sh &
