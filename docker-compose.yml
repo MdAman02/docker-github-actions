@@ -6,6 +6,6 @@ services:
     ports:
       - "81:80"
   web:
-    image: webapp:latest
+    image: mdamanu/aman
     ports:
       - "3000:3000"
