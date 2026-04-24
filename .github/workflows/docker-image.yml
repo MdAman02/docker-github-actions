@@ -18,11 +18,3 @@ jobs:
       run: sudo docker build . --tag mdamanu/aman
     - name: Push the docker image
       run: sudo docker push mdamanu/aman
-  deploy:
-    
-    runs-on: self-hosted
-    needs: build
-
-    steps:
-    - name: Deploy and restart the containers
-      run: sudo ~/containers.sh
